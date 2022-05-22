@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title> DrinkSaphe</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+	<div class="zoomin">
+
+		<div id="topbar">
+			<h1> DrinkSaphe</h1>
+			<p>Welcome to the dashboard ! </p>
+		</div>
+
+		<div id="topbar">
+			<a href="login.html" target="_blank" class="zoom"><button class="button button1" position=relative
+					float=right>Login</button>
+			</a>
+
+
+			<!-- drop down for settings and other features -->
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">
+					Settings
+				</button>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="#Password Change">Password Change</a>
+					<a href="#pH inteval check">pH inteval check</a>
+					<a href="#Add Cooler">Add Cooler</a>
+					<a href="#Set pH limit">Set pH limit</a>
+					<a href="#Set Alert time">Set Alert time</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="coolertile" style="position:relative;float:left;">
+			<img src="wcicon.jpg" height="130" width="400">
+			<h3>Cooler 1</h3>
+			<p><span class="tiletext"> Last pH = x </span></p>
+			<p> Location - CC3
+			<p>
+			<p><a href="checkph.html" target="_blank" class="zoom"><button class="button button2">Check current
+						pH</button></a></p>
+			<p><a href="cooler.html" target="_blank" class="zoom"><button class="button button1">See full
+						details</button></a></p>
+		</div>
+
+		<div class="coolertile" style="position:relative;float:left;">
+			<img src="wcicon.jpg" height="130" width="400">
+			<h3>Cooler 2</h3>
+			<p><span class="tiletext"> Last pH = x </span></p>
+			<p> Location - CC3
+			<p>
+			<p><a href="checkph.html" target="_blank" class="zoom"><button class="button button2">Check current
+						pH</button></a></p>
+			<p><a href="cooler.html" target="_blank" class="zoom"><button class="button button1">See full
+						details</button></a></p>
+
+		</div>
+
+		<div class="coolertile" style="position:relative;float:left;">
+			<img src="wcicon.jpg" height="130" width="400">
+			<h3>Cooler 3</h3>
+			<p><span class="tiletext"> Last pH = x </span></p>
+			<p> Location - CC3
+			<p>
+			<p><a href="checkph.html" target="_blank" class="zoom"><button class="button button2">Check current
+						pH</button></a></p>
+			<p><a href="cooler.html" target="_blank" class="zoom"><button class="button button1">See full
+						details</button></a></p>
+
+
+		</div>
+
+		<div class="coolertile" style="position:relative;float:left;">
+			<img src="wcicon.jpg" height="130" width="400">
+			<h3>Cooler 4</h3>
+			<p><span class="tiletext"> Last pH = x </span></p>
+			<p> Location - CC3
+			<p>
+			<p><a href="checkph.html" target="_blank" class="zoom"><button class="button button2">Check current
+						pH</button></a></p>
+			<p><a href="cooler.html" target="_blank" class="zoom"><button class="button button1">See full
+						details</button></a></p>
+
+
+		</div>
+
+		<div class="coolertile" style="position:relative;float:left;">
+			<img src="wcicon.jpg" height="130" width="400">
+			<h3>Cooler 5</h3>
+			<p><span class="tiletext"> Last pH = x </span></p>
+			<p> Location - CC3
+			<p>
+			<p><a href="checkph.html" target="_blank" class="zoom"><button class="button button2">Check current
+						pH</button></a></p>
+			<p><a href="cooler.html" target="_blank" class="zoom"><button class="button button1">See full
+						details</button></a></p>
+
+
+		</div>
+
+		<div class="coolertile" style="position:relative;float:left;">
+			<img src="wcicon.jpg" height="130" width="400">
+			<h3>Cooler 6</h3>
+			<p><span class="tiletext"> Last pH = x </span></p>
+			<p> Location - CC3
+			<p>
+			<p><a href="checkph.html" target="_blank" class="zoom"><button class="button button2">Check current
+						pH</button></a></p>
+			<p><a href="cooler.html" target="_blank" class="zoom"><button class="button button1">See full
+						details</button></a></p>
+
+
+		</div>
+
+
+	</div>
+
+	<div class="area">
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+
+	</div>
+
+	<div id="bottombar">
+
+		<a href="login.html" target="_blank" class="zoom"><button class="button button1" float=right>Report an
+				issue</button></a>
+		<h3> Contact us</h3>
+		<p> contact details</p>
+
+	</div>
+
+	<script>
+		function myFunction() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		window.onclick = function (event) {
+			if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
+			}
+		}
+	</script>
+
+
+
+
+</body>
+
+</html>
